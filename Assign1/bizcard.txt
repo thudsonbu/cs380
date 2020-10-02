@@ -1,0 +1,23 @@
+<div id="card" style="position:relative;width:3.5in;height:2in;border:1px silver solid;font-family:Calibri;background-color:white;zindex:1;">
+
+	<div id="logo" style="padding:.3in 6px 0px 6px;float:left;height:1.7in;">
+		<img src="images/avatar.png" alt="logo" style="width:64px;height:64px;">
+	</div>
+	<div id="name" style="font-family:Calibri;font-size:22pt;font-variant:small-caps;margin-top:0px;">Your Name</div>
+	<div id="title" style="font-size:x-large;font-family:Calibri;font-variant:small-caps;margin-top:-4px;">Class Year</div>
+	<div id="addr" style="font-size:small;">
+		<br/>Address Line 1<br>
+			Address Line 2 (if needed)<br>
+			Bentley University<br>
+			Waltham, MA 02452-4705<br>
+	</div>
+
+	<div id="contact" style="font-family:'Courier New';font-size:9pt;padding-top:6px;">
+		phone: 781.891.9999<br>
+		email: yourshortname@bentley.edu<br>
+		web:&nbsp;&nbsp;&nbsp;web.bentley.edu/yourshortname
+	</div>
+	<div id="background" style="position: absolute;background-color:transparent;height:2in;width:2.67in;top:0in;left:80px;opacity:.2;overflow:hidden;">
+		<img src="images/avatar.png" style="position:absolute;top:-.25in;left:0.5in;transform:rotate(-11deg)" />
+	</div>
+</div>
