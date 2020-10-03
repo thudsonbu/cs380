@@ -10,6 +10,45 @@
 	<link href="Assign1/css/stylesheet.css" rel="stylesheet" type="text/css">
 	<script src="Assign1/js/javascript.js" type="text/javascript"></script>
 	<style type="text/css">
+        .nav{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+        }
+        .link{
+            text-decoration: none;
+        }
+        .btn {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            display: block;
+            position: relative;
+            background-color: #e6e6e6;
+            text-decoration: none;
+            font-size: 3em;
+            font-weight: 300px;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 1em 2em;
+            margin: 0 auto;
+            border-radius: 1.15em;
+            box-shadow: 0 .3em #9f9f9f;
+        }
+
+        .btn:hover {
+                box-shadow: 0 .2em #9f9f9f;
+                top: .1em;
+        }
+
+        .btn:active {
+            box-shadow: 0 0 #9f9f9f;
+            top: .3em;
+        }
 	</style>
 	<script type="text/javascript">
 	</script>
@@ -28,9 +67,14 @@
 		<img src="Assign1/images/avatar.png" class="_siz48" alt="48x48">
 		<img src="Assign1/images/avatar.png" class="_siz16" alt="16x16">
 	</div>
-	<nav style="height: 50px">
-		<a href="http://webdev.bentley.edu/hudsonthom/Assign1/A1.html">A1</a>
-		<a href="http://webdev.bentley.edu/hudsonthom/Assign1/A1b.html">A1b</a>
+	<h1 style="text-align: center; margin-top: 30px;">My Assignments: </h1>
+	<nav class="nav">
+        <a class="link" href="http://webdev.bentley.edu/hudsonthom/Assign1/A1.html" target="_blank">
+            <button class="btn">A1</button>
+        </a>
+        <a class="link" href="http://webdev.bentley.edu/hudsonthom/Assign1/A1b.html" target="_blank">
+            <button class="btn">A1b</button>
+        </a>
 	</nav>
 	<footer>
 	</footer>
