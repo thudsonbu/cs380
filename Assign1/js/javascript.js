@@ -4,16 +4,16 @@ window.onload = function () {
 // updated by e mccarron: Thu, Jan 21, 2016
 // updated by jd robertson: Fri, Dec 26, 2014
     var html = "";
-    html += "<div id='_avatar64'><img src='Assign1/images/avatar.png' class='_siz64' alt='avatar64'></div>";
+    html += "<div id='_avatar64'><img src='./images/avatar.png' class='_siz64' alt='avatar64'></div>";
     html += "<div id='_name'>";
     html += "<div id='_firstname'>Thomas</div>";
     html += "<div id='_lastname'>Hudson</div>";
     html += "<div id='_shortname'>hudson_thom</div>";
     html += "</div>";
-    html += "<div id='_headback'><img src='Assign1/images/avatar.png' class='_siz256'></div>";
+    html += "<div id='_headback'><img src='./images/avatar.png' class='_siz256'></div>";
     document.getElementsByTagName("header")[0].innerHTML = html; // set header
     html = "";
-    html += "<span id='_avatar32'><img src='Assign1/images/avatar.png' class='_siz32' alt='avatar32'></span>";
+    html += "<span id='_avatar32'><img src='./images/avatar.png' class='_siz32' alt='avatar32'></span>";
     html += "<span id='_course'>CS380</span>";
     html += "<span id='_semester'>Bentley University Fall 2020</span>";
     html += "<span id='_date'></span>";
@@ -41,7 +41,7 @@ window.onload = function () {
     foot.onmouseover =
         function () {
             var obj = document.getElementById("_avatar32");
-            obj.innerHTML = "<img src='Assign1/images/" + browserType() + ".png' class='_siz32'>";
+            obj.innerHTML = "<img src='./images/" + browserType() + ".png' class='_siz32'>";
             obj = document.getElementById("_date");
             html = dateStandard();
             if (browserType() !== "chrome" && browserType() !== "safari") html = dateLastModifiedStandard() + " last modified";
@@ -50,7 +50,7 @@ window.onload = function () {
     foot.onmouseout =
         function () {
             var obj = document.getElementById("_avatar32");
-            obj.innerHTML = "<img src='Assign1/images/avatar.png' class='_siz32' alt='avatar32'>";
+            obj.innerHTML = "<img src='./images/avatar.png' class='_siz32' alt='avatar32'>";
             obj = document.getElementById("_date");
             var date = dateStandard() + " " + julianDate() + " " + browserType().toUpperCase();
             obj.innerHTML = date;
