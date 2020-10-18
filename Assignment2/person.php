@@ -55,9 +55,7 @@
 
     <?php
 
-    require "connect.php";
-
-    require "person.php";
+    require "createPeopleTable.php";
 
     ?>
 
