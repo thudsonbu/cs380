@@ -15,7 +15,15 @@ body {
     align-items: center;
 }
 
-.myName {
+.pageTitleContainer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageTitle {
     color: #ffffff;
     font-size: 9rem;
     padding: .5rem;
@@ -23,7 +31,7 @@ body {
     text-align: center;
 }
 
-.courseName {
+.pageSubtitle {
     color: #ffffff;
     font-size: 4rem;
     width: 100%;
@@ -38,6 +46,10 @@ body {
 
 .link {
     color: #000000;
+}
+
+.activeLink {
+    color: #064cd5";
 }
 
 .navItem {
@@ -60,36 +72,134 @@ body {
     margin: 0 auto;
     border-radius: 1.15em;
     box-shadow: 0 .3em #c3c3c3;
-  }
+}
   
-  .squishyButton:hover {
+.squishyButton:hover {
     box-shadow: 0 .2rem #c3c3c3;
     top: .1rem;
-  }
+}
   
-  .squishyButton:active {
+.squishyButton:active {
       box-shadow: 0 0 #c3c3c3;
       top: .3rem;
-  }
+}
+
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableContainer {
+    margin-top: 7vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.tableTitle {
+    color: #000000;
+    margin-bottom: 2%;
+}
+
+table, th, td {
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+}
+
+.peopleTable {
+    width: 90%;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1100px) {
+
+    .peopleTable {
+        font-size: .8em;
+    }
+
+    .tableHeaderRow {
+        padding: 5px;
+    }
+    
+    .tableHeader {
+        padding: 5px;
+    }
+    
+    .tableDataRow {
+        padding: 5px;
+    }
+    
+    .tableData {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .peopleTable {
+        font-size: .5em;
+    }
+
+    .tableHeaderRow {
+        padding: 2px;
+    }
+    
+    .tableHeader {
+        padding: 2px;
+    }
+    
+    .tableDataRow {
+        padding: 2px;
+    }
+    
+    .tableData {
+        padding: 2px;
+    }
+}
+
+
+.tableHeaderRow {
+    padding: 10px;
+}
+
+.tableHeader {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.tableDataRow {
+    padding: 10px;
+}
+
+.tableData {
+    padding: 10px;
+}
 
 @media (max-width: 1400px) {
 
-    .myName {
+    .pageTitle {
         font-size: 8em;
     }
     
-    .courseName {
+    .pageSubtitle {
         font-size: 4em;
     }
 }
 
 @media (max-width: 1100px) {
 
-    .myName {
+    .pageTitle {
         font-size: 7em;
     }
 
-    .courseName {
+    .pageSubtitle {
         font-size: 3em;
     }
 }
@@ -97,11 +207,11 @@ body {
 
 @media (max-width: 900px) {
 
-    .myName {
+    .pageTitle {
         font-size: 5em;
     }
 
-    .courseName {
+    .pageSubtitle {
         font-size: 2em;
     }
 }
