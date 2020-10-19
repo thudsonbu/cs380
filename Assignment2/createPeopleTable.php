@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./stylesheets/home.css">
+    <link rel="stylesheet" href="./stylesheets/person.css">
 
 </head>
 

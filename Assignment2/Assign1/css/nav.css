@@ -29,8 +29,8 @@
 }
 
 .btn:hover {
-        box-shadow: 0 .2em #9f9f9f;
-        top: .1em;
+    box-shadow: 0 .2em #9f9f9f;
+    top: .1em;
 }
 
 .btn:active {

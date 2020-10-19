@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./stylesheets/theme.css">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./stylesheets/base.css">
+    <link rel="stylesheet" href="./stylesheets/person.css">
 
     <!-- My Icon -->
     <link rel="icon" href="./images/avatar.png">
@@ -38,19 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-nav navItem">
-                    <button class="squishyButton">
-                        <a class="nav-link link" href="./index.html"><span class="link">Home</span></a>
-                    </button>
+                    <a class="nav-link link" href="./index.html"><span class="">Home</span></a>
                 </li>
                 <li class="navbar-nav navItem">
-                    <button class="squishyButton">
-                        <a class="nav-link link" href="./Assign1/index.html"><span class="link">Assignment 1</span></a>
-                    </button>
+                    <a class="nav-link link" href="./Assign1/index.html"><span class="">Assignment 1</span></a>
                 </li>
                 <li class="navbar-nav navItem">
-                    <button class="squishyButton">
-                        <a class="nav-link link" href="./person.php"><span class="link">People</span></a>
-                    </button>
+                    <a class="nav-link link" href="./person.php"><span class="">Person</span></a>
                 </li>
             </ul>
         </div>
