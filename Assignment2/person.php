@@ -11,8 +11,11 @@
     <!-- Custom Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
+    <!-- Nav Styles -->
+    <link rel="stylesheet" href="./stylesheets/theme.css">
+
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./stylesheets/home.css">
+    <link rel="stylesheet" href="./stylesheets/base.css">
 
     <!-- My Icon -->
     <link rel="icon" href="./images/avatar.png">
@@ -41,7 +44,7 @@
                 </li>
                 <li class="navbar-nav navItem">
                     <button class="squishyButton">
-                        <a class="nav-link link" href="./Assignment1/oldIndex.html"><span class="link">Assignment 1</span></a>
+                        <a class="nav-link link" href="./Assign1/index.html"><span class="link">Assignment 1</span></a>
                     </button>
                 </li>
                 <li class="navbar-nav navItem">
