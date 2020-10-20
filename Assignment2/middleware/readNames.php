@@ -14,7 +14,7 @@
 <?php 
 
 // Read boy names
-$boyFile = fopen("C:/xampp\htdocs\code\Assignment2/names\boynames.txt", "r");
+$boyFile = fopen("C://CS380/boynames.txt", "r");
 
 $boyNames = array();
 $boyTotal = 0;
@@ -23,9 +23,10 @@ while(!feof($boyFile)) {
 
     $line = fgets($boyFile);
 
-    if(isset($line)) {
+    $values = explode(" ", $line);
 
-        $values = explode(" ", $line);
+    if(isset($values[1])) {
+
         $name = $values[0];
         $count = $values[1];
 
@@ -38,7 +39,7 @@ fclose($boyFile);
 
 // Read girl names file
 
-$girlFile = fopen("C:/xampp\htdocs\code\Assignment2/names\girlnames.txt", "r");
+$girlFile = fopen("C://CS380/girlnames.txt", "r");
 
 $girlNames = array();
 $girlTotal = 0;
@@ -47,11 +48,10 @@ while(!feof($girlFile)) {
 
     $line = fgets($girlFile);
 
-    
+    $values = explode(" ", $line);
 
-    if(isset($line))  {
+    if(isset($values[1]))  {
 
-        $values = explode(" ", $line);
         $name = $values[0];
         $count = $values[1];
 

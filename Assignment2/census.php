@@ -69,7 +69,7 @@
             </div>
             <?php
 
-            require "C:/xampp\htdocs\code\Assignment2\middleware\createNameTable.php";
+            require "./middleware\createNameTable.php";
 
             ?>
         </div>
