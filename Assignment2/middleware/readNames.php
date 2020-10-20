@@ -19,12 +19,14 @@ $boyFile = fopen("C://CS380/boynames.txt", "r");
 $boyNames = array();
 $boyTotal = 0;
 
+// Read lines from file while lines remaining
 while(!feof($boyFile)) {
 
     $line = fgets($boyFile);
 
     $values = explode(" ", $line);
 
+    // check  if end of file
     if(isset($values[1])) {
 
         $name = $values[0];
@@ -38,18 +40,19 @@ while(!feof($boyFile)) {
 fclose($boyFile);
 
 // Read girl names file
-
 $girlFile = fopen("C://CS380/girlnames.txt", "r");
 
 $girlNames = array();
 $girlTotal = 0;
 
+// Read lines from file while lines remaining
 while(!feof($girlFile)) {
 
     $line = fgets($girlFile);
 
     $values = explode(" ", $line);
 
+    // check  if end of file
     if(isset($values[1]))  {
 
         $name = $values[0];
@@ -62,8 +65,10 @@ while(!feof($girlFile)) {
 
 fclose($girlFile);
 
+// find matching keys between boy and girl names
 $commonBoyNames = array_intersect_key( $boyNames, $girlNames );
 
+// find matching keys between boy and girl names
 $commonGirlNames = array_intersect_key( $girlNames, $boyNames );
 
 ?>

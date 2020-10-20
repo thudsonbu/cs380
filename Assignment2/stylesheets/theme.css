@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
 }
 
+/* PAGE TITLE AND HEADER STYLES */
 .jumboTron {
     height: 80vh;
     display: flex;
@@ -38,6 +39,8 @@ body {
     text-align: center;
 }
 
+/* NAV STYLES */
+
 .myLogo {
     margin-left: 10px;
     width: 50px;
@@ -59,6 +62,8 @@ body {
 .navItem {
     margin: 10px;
 }
+
+/* MAIN BUTTON STYLES */
 
 .squishyButton {
     outline: none;
@@ -87,6 +92,8 @@ body {
     box-shadow: 0 0 #9f9f9f;
     top: .3em;
 }
+
+/* RESPONSIVE STYLES */
 
 @media (max-width: 1400px) {
 

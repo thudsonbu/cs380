@@ -17,10 +17,12 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./stylesheets/person.css">
 
+    <!-- EMBEDED STYLES ARE PLACED IN MIDDLWARE/CREATENAMETABLE -->
+
     <!-- My Icon -->
     <link rel="icon" href="./images/avatar.png">
 
-    <title>CS380 A2 - Person</title>
+    <title>CS380 A2 - Census</title>
 </head>
 
 <body>
@@ -53,6 +55,7 @@
         </div>
     </nav>
 
+    <!-- PAGE TITLE -->
     <div class='pageTitleContainer'>
         <div class='pageTitle'>
             Census
@@ -62,6 +65,7 @@
         </div>
     </div>
 
+    <!-- PAGE CONTENT -->
     <div class='sectionContainer'>
         <div class='tableContainer'>
             <div class='pageSubtitle tableTitle'>
