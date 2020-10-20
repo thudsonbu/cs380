@@ -64,8 +64,6 @@ fclose($girlFile);
 
 $commonBoyNames = array_intersect_key( $boyNames, $girlNames );
 
-echo($commonBoyNames['Riley']);
-
 $commonGirlNames = array_intersect_key( $girlNames, $boyNames );
 
 ?>

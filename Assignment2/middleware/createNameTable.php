@@ -33,14 +33,40 @@
             border-radius: 5px;
         }
 
-        .peopleTable {
+        .girl {
+            color: #f59fd7;
+        }
+
+        .boy {
+            color: #064cd5;
+        }
+
+        .total {
+            font-size: 1.5em;
+        }
+
+        .commonNames {
+            font-style: italic;
+            font-size: 1.3em;
+            margin-bottom: 5vh;
+        }
+
+        @media (max-width: 800px) {
+            
+            .commonNames {
+                font-size: .8em;
+                margin-bottom: 3vh;
+            }
+        }
+
+        .nameTable {
             width: 90%;
             font-size: 1.2em;
         }
 
         @media (max-width: 1100px) {
 
-            .peopleTable {
+            .nameTable {
                 font-size: .8em;
             }
 
@@ -63,7 +89,7 @@
 
         @media (max-width: 800px) {
 
-            .peopleTable {
+            .nameTable {
                 font-size: .5em;
             }
 
@@ -149,8 +175,6 @@ echo "<div class='commonNamesContainer'>";
     echo "<div class='commonNames'> There are <span class='nameCount'>$nameCount</span> common names. </div>";
 echo "</div>";
 
-echo "<div class='tableTitle'> Common Names </div>";
-
 echo "<table class='nameTable'>";
 
 echo "<tr class='tableHeaderRow'>
@@ -175,9 +199,9 @@ foreach($commonBoyNames as $name => $count) {
 }
 
 echo "<tr class='tableTotalRow'>";
-    echo "<td class='tableDataTotal boy'> Total: </td>";
-    echo "<td class='tableDataTotal boy'> $boyTotal </td>";
-    echo "<td class='tableDataTotal girl'> $girlTotal </td>";
+    echo "<td class='tableData total'> Total: </td>";
+    echo "<td class='tableData boy total'> $boyTotal </td>";
+    echo "<td class='tableData girl total'> $girlTotal </td>";
 echo "</tr>";
 
 echo "</table>";
