@@ -55,21 +55,21 @@
 
     <div class='pageTitleContainer'>
         <div class='pageTitle'>
-            People
+            Census
         </div>
         <div class='pageSubtitle'>
-            Information in the People Table
+            Common Boy and Girl Names
         </div>
     </div>
 
     <div class='sectionContainer'>
         <div class='tableContainer'>
             <div class='pageSubtitle tableTitle'>
-                Index
+                Common Names
             </div>
             <?php
 
-            require "./middleware/createPeopleTable.php";
+            require "C:/xampp\htdocs\code\Assignment2\middleware\createNameTable.php";
 
             ?>
         </div>

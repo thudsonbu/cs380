@@ -9,19 +9,12 @@
     <!-- Custom Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
-    <!-- Custom Styles -->
-    <styles type="text/css"> 
-
-
-
-    </styles>
-
 </head>
 
 <?php 
 
 // Read boy names
-$boyFile = fopen("C:\Users\Tom Hudson\Desktop\CS380\code\Assignment2\boynames.txt", "r");
+$boyFile = fopen("C:/xampp\htdocs\code\Assignment2/names\boynames.txt", "r");
 
 $boyNames = array();
 $boyTotal = 0;
@@ -45,7 +38,7 @@ fclose($boyFile);
 
 // Read girl names file
 
-$girlFile = fopen("C:\Users\Tom Hudson\Desktop\CS380\code\Assignment2\girlnames.txt", "r");
+$girlFile = fopen("C:/xampp\htdocs\code\Assignment2/names\girlnames.txt", "r");
 
 $girlNames = array();
 $girlTotal = 0;
@@ -74,3 +67,5 @@ $commonBoyNames = array_intersect_key( $boyNames, $girlNames );
 echo($commonBoyNames['Riley']);
 
 $commonGirlNames = array_intersect_key( $girlNames, $boyNames );
+
+?>

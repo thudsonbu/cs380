@@ -50,3 +50,5 @@ while ( $line = mysqli_fetch_array( $result, MYSQLI_ASSOC ) ) {
 echo "</table>";
 
 mysqli_close($con);
+
+?>
