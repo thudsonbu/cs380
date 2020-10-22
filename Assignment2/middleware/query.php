@@ -2,15 +2,18 @@
 
 function makeQuery($con, $query){
 
-    $result = null;
+    $fields = null;
 
     try {
         $result = mysqli_query($con, $query);
+
+        $fields = mysqli_fetch_fields($result);
+
     } catch(Exception $e) {
         echo "Querry Failed";
     }
 
-    return $result;
+    return $fields;
 }
 
 ?>

@@ -8,7 +8,7 @@ CREATE TABLE person (
     LastName varchar(50) NOT NULL,
     picUrl varchar(50),
     Bio varchar(255) NOT NULL,
-    PRIMARY KEY (LoginID)
+    PRIMARY KEY (Product)
 );
 
 INSERT INTO person VALUES ( 'th1', 'tom', 'hudson', null, 'tom is a good coder'),

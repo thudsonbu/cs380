@@ -19,7 +19,6 @@
 require "C://xampp\CS612\hudsonthom\middleware/connect.php";
 require "C://xampp\CS612\hudsonthom\middleware/query.php";
 
-
 $con = getConnection();
 
 $query = "SELECT * FROM person;";
