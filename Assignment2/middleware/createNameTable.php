@@ -167,7 +167,7 @@
                 font-size: 2em;
             }
         }
-        
+
     </style>
 
 </head>
@@ -177,10 +177,22 @@
 // read names returns boy and girl names arrays as well as names in common
 require "readNames.php";
 
-$nameCount = sizeof($commonBoyNames);
+// read and unpack boy names
+$boysRead = readNames("C:/CS380/boynames.txt");
+$boyNamesAsArr = $boysRead[0];
+$boyTotal = $boysRead[1];
+
+// read and unpack girl names
+$girlsRead = readNames("C:/CS380/girlnames.txt");
+$girlNamesAsArr = $girlsRead[0];
+$girlTotal = $girlsRead[1];
+
+$commonNames = array_intersect_key($boyNamesAsArr, $girlNamesAsArr);
+
+$commonNameCount = sizeof($commonNames);
 
 echo "<div class='commonNamesContainer'>";
-    echo "<div class='commonNames'> There are <span class='nameCount'>$nameCount</span> common names. </div>";
+    echo "<div class='commonNames'> There are <span class='nameCount'>$commonNameCount</span> common names. </div>";
 echo "</div>";
 
 // Begin table 
@@ -200,11 +212,11 @@ echo "<tr class='tableHeaderRow'>
     </tr>";
 
 // Table rows
-foreach($commonBoyNames as $name => $count) {
+foreach($commonNames as $name => $count) {
     echo "<tr class='tableDataRow'>";
         echo "<td class='tableData'> $name </td>";
         echo "<td class='tableData boy'> $count </td>";
-        echo "<td class='tableData girl'> $commonGirlNames[$name] </tx>";
+        echo "<td class='tableData girl'> $girlNamesAsArr[$name] </td>";
     echo "</tr>";
 }
 
