@@ -175,20 +175,20 @@
 <?php
 
 // read names returns boy and girl names arrays as well as names in common
-require "readNames.php";
+require "C://xampp\CS612\hudsonthom\middleware/readNames.php";
 
 // read and unpack boy names
-$boysRead = readNames("C:/CS380/boynames.txt");
+$boysRead = readNames("C://CS380//boynames.txt");
 $boyNamesAsArr = $boysRead[0];
 $boyTotal = $boysRead[1];
 
 // read and unpack girl names
-$girlsRead = readNames("C:/CS380/girlnames.txt");
+$girlsRead = readNames("C://CS380//girlnames.txt");
 $girlNamesAsArr = $girlsRead[0];
 $girlTotal = $girlsRead[1];
 
+// find intersection in names between boy and girl names associative arrays
 $commonNames = array_intersect_key($boyNamesAsArr, $girlNamesAsArr);
-
 $commonNameCount = sizeof($commonNames);
 
 echo "<div class='commonNamesContainer'>";

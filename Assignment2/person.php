@@ -69,7 +69,7 @@
             </div>
             <?php
 
-            require "./middleware/createPeopleTable.php";
+            require "./partials/peopleTable.php";
 
             ?>
         </div>

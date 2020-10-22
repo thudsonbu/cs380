@@ -16,7 +16,7 @@
 
 <?php
 
-require "connect.php";
+require "C://xampp\CS612\hudsonthom\middleware/connect.php";
 
 $query = "SELECT * FROM person;";
 

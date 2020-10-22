@@ -17,7 +17,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./stylesheets/person.css">
 
-    <!-- EMBEDED STYLES ARE PLACED IN MIDDLWARE/CREATENAMETABLE -->
+    <!-- EMBEDED STYLES ARE PLACED IN PARTIALS/CREATENAMETABLE -->
 
     <!-- My Icon -->
     <link rel="icon" href="./images/avatar.png">
@@ -74,7 +74,7 @@
             </div>
             <?php
 
-            require "./middleware\createNameTable.php";
+            require "./partials/nameTable.php";
 
             ?>
         </div>
