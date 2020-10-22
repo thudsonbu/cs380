@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./stylesheets/person.css">
 
     <!-- EMBEDED STYLES ARE PLACED IN PARTIALS/CREATENAMETABLE -->
-
+    
     <!-- My Icon -->
     <link rel="icon" href="./images/avatar.png">
 

@@ -17,10 +17,14 @@
 <?php
 
 require "C://xampp\CS612\hudsonthom\middleware/connect.php";
+require "C://xampp\CS612\hudsonthom\middleware/query.php";
+
+
+$con = getConnection();
 
 $query = "SELECT * FROM person;";
 
-$result = mysqli_query($con, $query) or die('Query failed: ' . mysqli_errno($con));
+$result = makeQuery($con, $query);
 
 echo "<table class='peopleTable'>";
 
